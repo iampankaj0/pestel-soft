@@ -56,7 +56,9 @@ a:hover{
   background-color: transparent;
   
 }
-
+.navbar{
+  padding: 0.5rem 0!important;
+}
 .nav-container>nav{
   background-color: transparent!important;
   text-transform: uppercase;
@@ -111,7 +113,9 @@ color: #e81c25;
   font-family: 'Nunito-B';
   font-weight: 500;
   font-size: 17px;
-  text-align: center;
+  margin-bottom: 0;
+  padding-left: 5px;
+  /* text-align: center; */
   border-bottom: 1px solid #d8d8d8;
 }
 
@@ -129,9 +133,27 @@ color: #e81c25;
   padding: 10px;
 }
 
+.nav-container .div-tags{
+  display: flex;
+  padding: 30px 0;
+  
+}
+.nav-container .div-tags .main-div{
+  display: flex;
+  flex-basis: 33%;
+}
+.nav-container .div-tags .main-div>div{
+  flex-basis: 49%;
+  padding: 10px 5px;
+}
 
 
-
+@media screen and (max-width: 1099px) {
+  .nav-container .div-tags{
+    display: block;
+    
+  }
+}
 
 
 @media all and (min-width: 992px) {
@@ -160,3 +182,23 @@ color: #e81c25;
   }
 }
 /* Navbar css Ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1514px) {
+  body{
+    padding: 0 1rem;
+  }
+}
