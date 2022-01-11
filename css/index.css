@@ -208,7 +208,50 @@ color: #e81c25;
 .brands-work .col-6:last-child{
   margin-top: 25px;
 }
+
+.brands-work .col-6 span{
+  display: flex;
+  margin: 15px 0 0 0;
+  justify-content: center;
+  font-family: 'Nunito-B';
+  text-transform: uppercase;
+  color: #e81c25;
+  font-weight: 500;
+  font-size: 17px;
+}
+.brands-work .col-6 a:hover span:after{
+  content: '→';
+  margin-left: 5px;
+}
 /* brands-work Ends */
+
+
+
+
+/* strore css start */
+.spare-str {
+  padding: 70px 0;
+}
+.spare-str .card{
+  border: none;
+  position: relative;
+  height: 100%;
+  height: 300px;
+  padding: 15px;
+}
+
+.spare-str .card.hero{
+  background-color: #e1e3e4;
+}
+
+.spare-str .card img{
+  width: 250px;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* store css ends */
 
 
 
