@@ -215,6 +215,18 @@ color: #e81c25;
   text-align: center;
 }
 
+@media (max-width: 1199px) {
+  #minimal-bootstrap-carousel .carousel-caption .container {
+      max-width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  #minimal-bootstrap-carousel .carousel-caption .container {
+      max-width: 720px;
+  }
+}
+
 #minimal-bootstrap-carousel .carousel-caption .container .box {
   display: table-cell;
   text-align: left;
@@ -257,7 +269,25 @@ color: #e81c25;
   z-index: 99;
 }
 
+@media (max-width: 667px) {
+  #minimal-bootstrap-carousel [class*=carousel-control] {
+      width: 30px;
+      height: 30px;
+      font-size: 15px;
+      line-height: 30px;
+  }
+}
 
+@media (max-width: 480px) {
+  #minimal-bootstrap-carousel [class*=carousel-control] {
+      width: 40px;
+      height: 40px;
+      font-size: 17px;
+      line-height: 40px;
+      background: rgba(255, 255, 255, 0.4);
+      color: #000;
+  }
+}
 
 #minimal-bootstrap-carousel .carousel-control-prev {
   left: 1%;
@@ -336,37 +366,5 @@ color: #e81c25;
 
 .slider-content-style .content a.thm-btn:hover {
   background: #fff;
-}
-
-@media (max-width: 1199px) {
-  #minimal-bootstrap-carousel .carousel-caption .container {
-      max-width: 960px;
-  }
-}
-
-@media (max-width: 991px) {
-  #minimal-bootstrap-carousel .carousel-caption .container {
-      max-width: 720px;
-  }
-}
-
-@media (max-width: 667px) {
-  #minimal-bootstrap-carousel [class*=carousel-control] {
-      width: 30px;
-      height: 30px;
-      font-size: 15px;
-      line-height: 30px;
-  }
-}
-
-@media (max-width: 480px) {
-  #minimal-bootstrap-carousel [class*=carousel-control] {
-      width: 40px;
-      height: 40px;
-      font-size: 17px;
-      line-height: 40px;
-      background: rgba(255, 255, 255, 0.4);
-      color: #000;
-  }
 }
 /* SLIDER ENDS */
