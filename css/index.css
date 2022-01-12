@@ -102,7 +102,8 @@ background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-menu {
-display: block;
+  display: block;
+  z-index: 2;
 }
 
 .dropdown-toggle:hover::after{
@@ -215,17 +216,6 @@ color: #e81c25;
   text-align: center;
 }
 
-@media (max-width: 1199px) {
-  #minimal-bootstrap-carousel .carousel-caption .container {
-      max-width: 960px;
-  }
-}
-
-@media (max-width: 991px) {
-  #minimal-bootstrap-carousel .carousel-caption .container {
-      max-width: 720px;
-  }
-}
 
 #minimal-bootstrap-carousel .carousel-caption .container .box {
   display: table-cell;
@@ -269,25 +259,6 @@ color: #e81c25;
   z-index: 99;
 }
 
-@media (max-width: 667px) {
-  #minimal-bootstrap-carousel [class*=carousel-control] {
-      width: 30px;
-      height: 30px;
-      font-size: 15px;
-      line-height: 30px;
-  }
-}
-
-@media (max-width: 480px) {
-  #minimal-bootstrap-carousel [class*=carousel-control] {
-      width: 40px;
-      height: 40px;
-      font-size: 17px;
-      line-height: 40px;
-      background: rgba(255, 255, 255, 0.4);
-      color: #000;
-  }
-}
 
 #minimal-bootstrap-carousel .carousel-control-prev {
   left: 1%;
@@ -305,8 +276,8 @@ color: #e81c25;
 
 /* fixing slider height */
 #minimal-bootstrap-carousel.slider-home-one .carousel-inner .carousel-item {
-  min-height: 1000px;
-  height: 100%;
+  min-height: 700px;
+  /* height: 100%; */
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -332,13 +303,11 @@ color: #e81c25;
   font-size: 100px;
   line-height: 1em;
   font-weight: 600;
-  font-family: 'Josefin Sans';
   -webkit-animation-delay: .5s;
   animation-delay: .5s;
 }
 
 .slider-content-style .content p {
-  font-family: 'Josefin Sans';
   font-weight: 600;
   font-size: 18px;
   color: #FFFFFF;
@@ -366,5 +335,52 @@ color: #e81c25;
 
 .slider-content-style .content a.thm-btn:hover {
   background: #fff;
+}
+
+@media (max-width: 1199px) {
+  #minimal-bootstrap-carousel .carousel-caption .container {
+      max-width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  #minimal-bootstrap-carousel .carousel-caption .container {
+      max-width: 720px;
+  }
+  .slider-content-style .content h3 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #minimal-bootstrap-carousel.slider-home-one .carousel-inner .carousel-item {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 667px) {
+  #minimal-bootstrap-carousel [class*=carousel-control] {
+      width: 30px;
+      height: 30px;
+      font-size: 15px;
+      line-height: 30px;
+  }
+  .slider-content-style .content h3 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  #minimal-bootstrap-carousel [class*=carousel-control] {
+      width: 40px;
+      height: 40px;
+      font-size: 17px;
+      line-height: 40px;
+      background: rgba(255, 255, 255, 0.4);
+      color: #000;
+  }
+  #minimal-bootstrap-carousel.slider-home-one .carousel-inner .carousel-item {
+    min-height: 400px;
+  }
 }
 /* SLIDER ENDS */
