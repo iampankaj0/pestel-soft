@@ -448,6 +448,15 @@ nav .dropdown-menu a {
     .brand-section .row .col-md-4:nth-child(3) {
         margin-top: 40px;
     }
+    .brand-section .card p {
+        left: 38%;
+    }
 }
 
 @media screen and (max-width: 575px) {}
+
+@media screen and (max-width: 375px) {
+    .brand-section .card p {
+        left: 35%;
+    }
+}
