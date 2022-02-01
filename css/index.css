@@ -209,6 +209,7 @@ nav .dropdown-menu a {
     padding: 0;
     text-align: right;
     text-shadow: none;
+    background-color: rgba(0 0 0 / 50%);
 }
 
 #minimal-bootstrap-carousel .carousel-caption .container {
@@ -384,7 +385,7 @@ nav .dropdown-menu a {
         color: #000;
     }
     #minimal-bootstrap-carousel.slider-home-one .carousel-inner .carousel-item {
-        min-height: 400px;
+        min-height: 260px;
     }
 }
 
@@ -402,6 +403,7 @@ nav .dropdown-menu a {
     border: none;
     box-shadow: 0px 0px 10px 4px #d8d8d8;
     border-radius: 15px;
+    min-height: 150px;
 }
 
 .brand-section img {
@@ -423,8 +425,18 @@ nav .dropdown-menu a {
     color: #000;
 }
 
+.brand-section .card:hover {
+    transition: 0.5s ease;
+    box-shadow: 0px 0px 10px 4px #e81c2557;
+}
+
 .brand-section .card:hover p {
     color: #e81c25;
+}
+
+.brand-section .card:hover p:after {
+    content: '»';
+    padding-left: 7px;
 }
 
 
