@@ -418,7 +418,13 @@ nav .dropdown-menu a {
     position: absolute;
     bottom: 3%;
     left: 40%;
-    margin-top: 20px
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+}
+
+.brand-section .card:hover p {
+    color: #e81c25;
 }
 
 
