@@ -27,7 +27,7 @@ body {
     overflow-x: hidden;
 }
 
-.container {
+.container.top-nav-container {
     padding: 0 var(--desktop-container-gutter);
 }
 
